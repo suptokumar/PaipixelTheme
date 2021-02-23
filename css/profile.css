@@ -1,0 +1,100 @@
+
+.profile_header .profile_background {
+  width: 100%;
+  height: 220px;
+}
+.profile_header .profile_image {
+  background: linear-gradient(#08f9f9,#009fff);
+  color: #1d53bb;
+  padding: 1px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 140px;
+  height: 150px;
+  margin-left: 3%;
+  margin-top: -140px;
+  position: absolute;
+  text-align: center;
+  line-height: 100px;
+  text-shadow: 1px 1px 1px red;
+  box-shadow: 0px 0px 3px 1px #ccc;
+  font-weight: bold;
+  font-size: 20px;
+  z-index: 10;
+}
+.profile_header {
+  background: lightgreen;
+  overflow: hidden;
+  height: 240px;
+}
+.profile_header .image_task .user_name{
+  margin-left: 20%;
+  position: absolute;
+  margin-top: -91px;
+  color: white;
+  text-shadow: 1px 1px 1px blue;
+}
+.profile_header .image_task .user_name a {
+  color: #2bc0fd;
+  text-shadow: none;
+  font-size: 16px;
+}
+@media(max-width: 850px){
+  .profile_header{
+    position: relative;
+  }
+  .profile_header .image_task .user_name{
+    right: 0;
+    margin-left: 0;
+    margin-right: 10px;
+    text-align: right;
+    margin-top: -83px;
+  }
+}
+@media(max-width: 480px){
+  .profile_header{
+    position: relative;
+    height: auto;
+  }
+  .profile_header .profile_image {
+    position: absolute;
+    margin: -160px 30%;
+  }
+  .profile_header .image_task .user_name{
+    position: static;
+    left: 0;
+    text-align: left;
+    margin: 0;
+    margin-top: 40px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .profile_header .image_task .user_name a {
+    color: yellow;
+  }
+}
+
+.button_set {
+  text-align: center;
+  padding: 10px;
+}
+.button_set a{
+  background: rgb(244,245,245);
+  display: inline-block;
+  padding: 8px 10px;
+  color: #666;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  border-radius: 2px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.button_set a:hover{
+  background: #1c65b3;
+  color: white !important;
+}
+.active_btn {
+  background: #0087ff !important;
+  color: white !important;
+  font-weight: bold;
+}

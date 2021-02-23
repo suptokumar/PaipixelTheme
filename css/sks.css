@@ -1,0 +1,28 @@
+/*menu style*/
+.tab_menu a{
+  padding: 10px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background: #e46a6f;
+  border-right: 1px solid #ddd;
+  margin-left: -4.4px;
+  font-weight: bold;
+}
+.tab_menu a:hover {
+  background: #cc0a0a;
+}
+.tab_menu a.active {
+  background: #f00;
+}
+.tab_menu {
+  overflow: hidden;
+  background: #fcfcfc;
+  margin: 0 auto;
+}
+.button.ad_button {
+  background: #00ffb7;
+  padding: 5%;
+  text-decoration: none;
+  font-size: 24px;
+}

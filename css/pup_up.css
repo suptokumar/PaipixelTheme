@@ -1,0 +1,24 @@
+.pup_up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.5);
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 500
+}
+.ajax_data {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: auto;
+  margin: 0 auto;
+  z-index: 1000;
+  display: none;
+}
+.form_partition span {
+  font-size: 25px;
+  font-weight: bold;
+  vertical-align: top;
+}

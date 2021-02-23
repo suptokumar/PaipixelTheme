@@ -1,0 +1,142 @@
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+.content_area.body_content {
+  width: 65%;
+  background: white;
+  padding: 1%;
+  margin: .5%;
+  border: 1px solid #ccc;
+  float: left;
+}
+
+.content_area.aside_content {
+  width: 27.5%;
+  background: #fff;
+  margin: .5%;
+  float: left;
+}
+.content_area.aside_content .caption {
+  background: linear-gradient(#74ecbe,#25d5b4);
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #4b4b4b;
+  text-shadow: 0px 0px 1px #bbb;
+}
+.content_area.aside_content .side_content {
+  max-height: 400px;
+  overflow: auto;
+}
+ul.paipixel_exam li {
+  margin: 10px 8%;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+ul.paipixel_exam li:last-child {
+  border-bottom: none;
+}
+ul.paipixel_exam li h3 a{
+  font-size: 17px;
+  margin-bottom: 2px;
+  color: #4881ec;
+  text-decoration: none;
+}
+ul.paipixel_exam li div.registery_settings {
+  text-align: center;
+  margin-top: 5px;
+}
+ul.paipixel_exam li div.registery_settings span {
+  margin: 10px;
+}
+.content_area.aside_content aside {
+  border: 1px solid #ccc;
+  background: white;
+}
+.content_area.aside_content aside:not(:first-child) {
+    margin-top: 20px;
+}
+@media (max-width:822px)
+{
+  .content_area.body_content {
+    width: 100%;
+    margin: 0px auto;
+    float: none;
+    margin-top: 10px;
+  }
+  .content_area.aside_content {
+    width: 92%;
+    margin: 0 auto;
+    float: none;
+    margin-top: 10px;
+  }
+  .content_area.aside_content aside {
+    width: 47%;
+    border: 1px solid #ccc;
+    margin: 1%;
+    display: inline-block;
+  }
+}
+@media (max-width: 618px){
+  .content_area.aside_content aside {
+    width: 100%;
+    margin: 0;
+    border: 0;
+  }
+}
+
+
+/* function fascilaty */
+
+.func_table {
+  width: 99%;
+  border-collapse: collapse;
+}
+.func_table tr td{
+  border: 1px solid #ccc;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  border-right: none;
+}
+.func_table tr th{
+  padding: 10px;
+  background: #fafafa;
+}
+
+.table_hoverable tr:nth-child(odd) {
+  background: #fafafa;
+}
+.table_hoverable tr:hover {
+  background: #eee;
+}
+
+#search_user #search_user_input {
+  background:url(../image/search-icon.png) 2% 50% / auto 90% no-repeat;
+  width: 82%;
+  padding: 10px 0% 10px 15%;
+  border: 1px solid #ccc;
+  margin: 1%;
+  font-size: 14px;
+}
+#cd_button{
+  border: 1px solid #02b99d !important;
+  color: #02b99d !important;
+  transition: .3s;
+}
+#cd_button:hover{
+  background: #02b99d !important;
+  color: white !important;
+}
+.cd_button{
+  border: 1px solid #02b99d !important;
+  color: #02b99d !important;
+  transition: .3s;
+}
+.cd_button:hover{
+  background: #02b99d !important;
+  color: white !important;
+}

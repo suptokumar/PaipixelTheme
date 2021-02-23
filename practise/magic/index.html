@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="magicsuggest.js"></script>
+	<link rel="stylesheet" href="magicsuggest-min.css">
+</head>
+<body>
+	<input type="text" id="ms1">
+	<script type="text/javascript">
+      $(function() {
+
+        var ms1 = $('#ms1').magicSuggest({
+          data: 'index.php',
+  dataUrlParams: { id: 34 }
+        });
+
+      });
+</script>
+</body>
+</html>

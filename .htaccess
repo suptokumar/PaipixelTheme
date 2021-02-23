@@ -1,0 +1,43 @@
+ErrorDocument 404 http://localhost/
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+order deny,allow
+
+
+
+<FilesMatch "\.(jpg|jpeg|png|gif|swf)$">
+	Header set Cache-Control "max-age: 604800, public"
+</FilesMatch>
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^profiles/([a-zA-Z0-9\-=&_@\.\,\)\(]*)$ index.php?profiles=$1 [NC,L]
+RewriteRule ^profiles index.php?profiles [NC,L]
+
+
+RewriteRule ^profile/([a-zA-Z0-9\-=&_@\.\,\)\(]*)$ index.php?profile=$1 [NC,L]
+
+RewriteRule ^post/([a-zA-Z0-9\-=&_@\.\,\)\(]*)$ post.php?id=$1 [NC,L]
+RewriteRule ^post post.php [NC,L]
+
+RewriteRule ^profile index.php?profile [NC,L]
+RewriteRule ^teams/([a-zA-Z0-9\-=&_@\.\,\)\(]*)$ index.php?teams=$1 [NC,L]
+
+RewriteRule ^team_exam index.php?team_exam [NC,L]
+RewriteRule ^teams index.php?teams [NC,L]
+
+RewriteRule ^team/([a-zA-Z0-9\-=&_@\.\,\)\(]*)$ index.php?team=$1 [NC,L]
+
+RewriteRule ^team index.php?team [NC,L]
+
+RewriteRule ^login index.php?login [NC,L]
+RewriteRule ^register index.php?register [NC,L]
+RewriteRule ^tutorial index.php?tutorial [NC,L]
+RewriteRule ^exams index.php?exams [NC,L]
+RewriteRule ^ratings index.php?ratings [NC,L]
+RewriteRule ^ask_teacher index.php?ask_teacher [NC,L]
+RewriteRule ^hire_teacher index.php?hire_teacher [NC,L]
+RewriteRule ^FAQ index.php?FAQ [NC,L]
+RewriteRule ^account index.php?account [NC,L]
